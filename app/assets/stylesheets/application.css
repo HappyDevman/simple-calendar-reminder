@@ -1,0 +1,87 @@
+.main-container {
+  width: 760px;
+  min-width: 760px;
+  height: 760px;
+  margin: 50px auto;
+}
+
+.reminder-card {
+  text-align: center;
+}
+
+a {
+  margin: 15px;
+  text-decoration: none;
+}
+
+.calendar {
+  border: 7px solid grey;
+  font-size: 20px;
+}
+
+.calendar thead {
+  background: gainsboro;
+}
+
+.calendar th, .calendar td {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  height: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  border: 1px solid grey;
+}
+
+.reminder-header {
+  font-size: 35px;
+}
+
+.today {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.notmonth {
+  background-color: azure;
+}
+
+.sunday {
+  color: red;
+}
+
+.form-horizontal {
+  display: table-caption;
+}
+
+.form-horizontal input {
+  margin: 10px 0;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+.form-group label{
+  margin-right: 20px;
+}
+
+.reminder-list {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+.reminder-item {
+  font-size: 14px;
+}
+
+.reminder-item a {
+  color: black;
+  white-space: nowrap;
+}
+
+.errors {
+  color: red;
+  margin-top: 5px;
+}

@@ -1,0 +1,32 @@
+en:
+  helpers:
+    links:
+      cancel: "Cancel"
+      confirm: "Confirm"
+  color:
+    default: "#FFFFFF"
+  date:
+    formats:
+      default: "%d/%m/%Y"
+  month:
+    formats:
+      default: "%B %Y"
+  time:
+    formats:
+      default: "%d/%m/%Y @ %I:%M %p"
+  reminders:
+    index:
+      new: "New Reminder"
+      next_month: ">"
+      prev_month: "<"
+    show:
+      title: "Reminder"
+    edit:
+      title: "Edit Reminder"
+      color: "Color:"
+      datetime: "Time:"
+      message: "Message:"
+    create:
+      title: "New Reminder"
+      failed: "The reminder cannot proceed."
+    title: "My Reminders"

@@ -1,0 +1,12 @@
+.form-group
+  = f.label :datetime, t('reminders.edit.datetime')
+  = f.datetime_field :datetime
+.form-group
+  = f.label :message, t('reminders.edit.message')
+  = f.text_field :message, required: true, maxlength: '30'
+.form-group
+  = f.label :color, t('reminders.edit.color')
+  = f.color_field :color
+.form-actions
+  = f.submit t('helpers.links.confirm'), :class => 'btn-primary'
+  = link_to t('helpers.links.cancel'), reminders_path, :class => 'btn'

@@ -1,0 +1,16 @@
+.main-container
+  .reminder-card
+    h2.reminder-header
+      = link_to t('reminders.index.prev_month'), reminders_path(date: date.prev_month)
+      = date.strftime(t('month.formats.default'))
+      = link_to t('reminders.index.next_month'), reminders_path(date: date.next_month)
+    = calendar(date: date, reminders: reminders_by_date) do |calender_date|
+      = calender_date.day
+      - if reminders_by_date[calender_date].present?
+        ul
+          - reminders_by_date[date].each do |reminder|
+            li
+              = link_to reminder.summary, reminder_path(reminder)
+  br
+  p
+    = link_to t('reminders.index.new'), new_reminder_path, :class => 'btn btn-primary'
